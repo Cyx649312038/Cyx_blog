@@ -1,0 +1,21 @@
+{
+        "name": "用node创建自己的package.json",
+        "version": "V0.0.1",
+        "main": "index.js",
+        "author": "陈泳鑫",
+        "license": "MIT",
+        "devDependencies": {
+          "@vuepress/plugin-back-to-top": "^1.9.7",
+          "@vuepress/plugin-nprogress": "^1.9.7",
+          "vuepress": "^1.9.7"
+        },
+        "scripts": {
+          "docs:dev": "vuepress dev docs",
+          "docs:build": "vuepress build docs"
+        },
+        "dependencies": {
+          "typescript": "^4.6.3",
+          "vuepress-plugin-auto-sidebar": "^2.3.2",
+          "vuepress-plugin-code-copy": "^1.0.6"
+        }
+      }

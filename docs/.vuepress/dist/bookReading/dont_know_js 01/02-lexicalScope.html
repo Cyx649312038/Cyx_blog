@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>词法阶段 | Cyx～</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/cyx_blog/assets/images/pageLogo.png">
+    <meta name="description" content="用于平时学习记录的笔记文档">
+    <meta name="author" content="cyx">
+    <meta name="Keywords" content="个人笔记">
+    
+    <link rel="preload" href="/cyx_blog/assets/css/0.styles.3178a8c9.css" as="style"><link rel="preload" href="/cyx_blog/assets/js/app.ebd8d218.js" as="script"><link rel="preload" href="/cyx_blog/assets/js/2.080a46d6.js" as="script"><link rel="preload" href="/cyx_blog/assets/js/10.d187e49f.js" as="script"><link rel="prefetch" href="/cyx_blog/assets/js/11.bfac635a.js"><link rel="prefetch" href="/cyx_blog/assets/js/12.167a9869.js"><link rel="prefetch" href="/cyx_blog/assets/js/13.5e1ef22e.js"><link rel="prefetch" href="/cyx_blog/assets/js/14.266321ac.js"><link rel="prefetch" href="/cyx_blog/assets/js/15.a0db7f52.js"><link rel="prefetch" href="/cyx_blog/assets/js/16.c3bd7f75.js"><link rel="prefetch" href="/cyx_blog/assets/js/17.850a33d5.js"><link rel="prefetch" href="/cyx_blog/assets/js/18.03baacf6.js"><link rel="prefetch" href="/cyx_blog/assets/js/19.e5ecc5cf.js"><link rel="prefetch" href="/cyx_blog/assets/js/20.84e71789.js"><link rel="prefetch" href="/cyx_blog/assets/js/21.0caa4d0f.js"><link rel="prefetch" href="/cyx_blog/assets/js/22.cd5e3d76.js"><link rel="prefetch" href="/cyx_blog/assets/js/23.de7b4abf.js"><link rel="prefetch" href="/cyx_blog/assets/js/24.902ad754.js"><link rel="prefetch" href="/cyx_blog/assets/js/25.4982f003.js"><link rel="prefetch" href="/cyx_blog/assets/js/26.b26cd10d.js"><link rel="prefetch" href="/cyx_blog/assets/js/27.0b792ce1.js"><link rel="prefetch" href="/cyx_blog/assets/js/28.9270dd34.js"><link rel="prefetch" href="/cyx_blog/assets/js/29.5dc2abbe.js"><link rel="prefetch" href="/cyx_blog/assets/js/3.321db5fe.js"><link rel="prefetch" href="/cyx_blog/assets/js/30.718bae68.js"><link rel="prefetch" href="/cyx_blog/assets/js/31.964cb332.js"><link rel="prefetch" href="/cyx_blog/assets/js/32.9da046ff.js"><link rel="prefetch" href="/cyx_blog/assets/js/33.f9e6634f.js"><link rel="prefetch" href="/cyx_blog/assets/js/34.34ac8e0c.js"><link rel="prefetch" href="/cyx_blog/assets/js/35.a763a0be.js"><link rel="prefetch" href="/cyx_blog/assets/js/36.a890cb02.js"><link rel="prefetch" href="/cyx_blog/assets/js/37.1c7e8019.js"><link rel="prefetch" href="/cyx_blog/assets/js/38.a4ab6049.js"><link rel="prefetch" href="/cyx_blog/assets/js/39.1fd5ccb6.js"><link rel="prefetch" href="/cyx_blog/assets/js/4.0704d8fe.js"><link rel="prefetch" href="/cyx_blog/assets/js/40.fe6c7787.js"><link rel="prefetch" href="/cyx_blog/assets/js/41.5a66ba75.js"><link rel="prefetch" href="/cyx_blog/assets/js/42.1d56113a.js"><link rel="prefetch" href="/cyx_blog/assets/js/43.2f654199.js"><link rel="prefetch" href="/cyx_blog/assets/js/44.081f7e06.js"><link rel="prefetch" href="/cyx_blog/assets/js/45.d8c3fbd6.js"><link rel="prefetch" href="/cyx_blog/assets/js/46.f0175cde.js"><link rel="prefetch" href="/cyx_blog/assets/js/5.11b70e0a.js"><link rel="prefetch" href="/cyx_blog/assets/js/6.74c239f2.js"><link rel="prefetch" href="/cyx_blog/assets/js/7.67a47de0.js"><link rel="prefetch" href="/cyx_blog/assets/js/8.e668bce6.js"><link rel="prefetch" href="/cyx_blog/assets/js/9.086a537d.js">
+    <link rel="stylesheet" href="/cyx_blog/assets/css/0.styles.3178a8c9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/cyx_blog/" class="home-link router-link-active"><img src="/cyx_blog/assets/images/logo.png" alt="Cyx～" class="logo"> <span class="site-name can-hide">Cyx～</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/cyx_blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/cyx_blog/bookReading/" class="nav-link router-link-active">
+  bookReading
+</a></div><div class="nav-item"><a href="/cyx_blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/cyx_blog/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/cyx_blog/project/" class="nav-link">
+  project
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/cyx_blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/cyx_blog/bookReading/" class="nav-link router-link-active">
+  bookReading
+</a></div><div class="nav-item"><a href="/cyx_blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/cyx_blog/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/cyx_blog/project/" class="nav-link">
+  project
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/cyx_blog/bookReading/" class="sidebar-heading clickable router-link-active open"><span>前端书籍阅读</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/cyx_blog/bookReading/dont_know_js 01/" class="sidebar-heading clickable open"><span>你不知道的JS(上)</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/cyx_blog/bookReading/dont_know_js 01/01-actionScope.html" class="sidebar-link">1. 作用域</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 01/02-lexicalScope.html" class="active sidebar-link">2. 词法作用域</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 01/02-lexicalScope.html#词法阶段" class="sidebar-link">词法阶段</a></li><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 01/02-lexicalScope.html#欺骗词法" class="sidebar-link">欺骗词法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 01/02-lexicalScope.html#_1-eval" class="sidebar-link">1.eval()</a></li><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 01/02-lexicalScope.html#_2-with" class="sidebar-link">2.with()</a></li><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 01/02-lexicalScope.html#_3-性能" class="sidebar-link">3.性能</a></li></ul></li></ul></li><li><a href="/cyx_blog/bookReading/dont_know_js 01/03-funcScopeAndBlockScope.html" class="sidebar-link">3. 函数作用域和块作用域</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 01/04-hoist.html" class="sidebar-link">4.提升</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 01/05-closures.html" class="sidebar-link">5.闭包</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 01/06-this.html" class="sidebar-link">6.this</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 01/07-object.html" class="sidebar-link">7.对象</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 01/08-class.html" class="sidebar-link">8.类</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 01/09-prototype.html" class="sidebar-link">9.原型</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 01/10-entrust.html" class="sidebar-link">10.委托</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/cyx_blog/bookReading/dont_know_js 02/" class="sidebar-heading clickable"><span>你不知道的JS(中)</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/cyx_blog/bookReading/dont_know_js 03/" class="sidebar-heading clickable"><span>你不知道的JS(下)</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/cyx_blog/bookReading/javaScriptRedBook/" class="sidebar-link">javaScript程序设计(第四版)</a></li><li><a href="/cyx_blog/bookReading/illustrateHttp/" class="sidebar-link">图解Http</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="词法阶段"><a href="#词法阶段" class="header-anchor">#</a> 词法阶段</h2> <blockquote><p>大部分标准语言编译器的第一个工作阶段叫作词法化(也叫单词化)。回 忆一下，词法化的过程会对源代码中的字符进行检查，如果是有状态的解析过程，还会赋 予单词语义。</p> <p>简单地说，词法作用域就是定义在词法阶段的作用域。换句话说，词法作用域是由你在写代码时将变量和块作用域写在哪里来决定的，因此当词法分析器处理代码时会保持作用域不变(大部分情况下是这样的)。</p></blockquote> <blockquote><p>全局变量会自动成为全局对象(比如浏览器中的 window 对象)的属性，因此 可以不直接通过全局对象的词法名称，而是间接地通过对全局对象属性的引 用来对其进行访问。</p> <p>window.a</p> <p>通过这种技术可以访问那些被同名变量所遮蔽的全局变量。但非全局的变量 如果被遮蔽了，无论如何都无法被访问到。</p></blockquote> <h2 id="欺骗词法"><a href="#欺骗词法" class="header-anchor">#</a> 欺骗词法</h2> <p>如果词法作用域完全由写代码期间函数所声明的位置来定义，怎样才能在运行时来“修
+改”(也可以说欺骗)词法作用域呢?（欺骗词法作用域会导致性能的下降）</p> <h3 id="_1-eval"><a href="#_1-eval" class="header-anchor">#</a> 1.eval()</h3> <p>JavaScript 中的 eval(..) 函数可以接受一个字符串为参数，并将其中的内容视为好像在书 写时就存在于程序中这个位置的代码。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">str<span class="token punctuation">,</span> a</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token function">eval</span><span class="token punctuation">(</span> str <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 欺骗! </span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a<span class="token punctuation">,</span> b <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token function">foo</span><span class="token punctuation">(</span> <span class="token string">&quot;var b = 3;&quot;</span><span class="token punctuation">,</span> <span class="token number">1</span> <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1, 3</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>eval(..) 调用中的 &quot;var b = 3;&quot; 这段代码会被当作本来就在那里一样来处理。</p> <p>而在实际情况中，可以非常容易地根据程序逻辑动态地将字符 拼接在一起之后再传递进去。eval(..) 通常被用来执行动态创建的代码，因 为像例子中这样动态地执行一段固定字符所组成的代码，并没有比直接将代 码写在那里更有好处。</p></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>在严格模式的程序中，eval(..) 在运行时有其自己的词法作用域，意味着其 中的声明无法修改所在的作用域。</p></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+    <span class="token string">&quot;use strict&quot;</span><span class="token punctuation">;</span>
+    <span class="token function">eval</span><span class="token punctuation">(</span> str <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// ReferenceError: a is not defined</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span> <span class="token string">&quot;var a = 2&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_2-with"><a href="#_2-with" class="header-anchor">#</a> 2.with()</h3> <p>with 通常被当作重复引用同一个对象中的多个属性的快捷方式，可以不需要重复引用对象本身。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> 
+<span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+<span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+<span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// 单调乏味的重复 &quot;obj&quot; </span>
+obj<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>c <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token comment">// 简单的快捷方式 </span>
+<span class="token keyword">with</span> <span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+b <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+c <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+<span class="token keyword">with</span> <span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> o1 <span class="token operator">=</span> <span class="token punctuation">{</span> 
+    <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">3</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> o2 <span class="token operator">=</span> <span class="token punctuation">{</span> 
+    <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token number">3</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token function">foo</span><span class="token punctuation">(</span> o1 <span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> o1<span class="token punctuation">.</span>a <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2</span>
+<span class="token function">foo</span><span class="token punctuation">(</span> o2 <span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> o2<span class="token punctuation">.</span>a <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2——不好，a 被泄漏到全局作用域上了!</span>
+</code></pre></div><blockquote><p>可以这样理解，当我们传递 o1 给 with 时，with 所声明的作用域是 o1，而这个作用域中含 有一个同 o1.a 属性相符的标识符。但当我们将 o2 作为作用域时，其中并没有 a 标识符， 因此进行了正常的 LHS 标识符查找
+o2 的作用域、foo(..) 的作用域和全局作用域中都没有找到标识符 a，因此当 a=2 执行 时，自动创建了一个全局变量(因为是非严格模式)。</p></blockquote> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>with可以将一个对象的引用当作作用域来处理，将对象的属性当作作用域中的标识符来处理，从而创建了一个新的词法作用域（同样是在运行时）。</p> <p>eval(..) 函数如果接受了含有一个或多个声明的代码，就会修改其所处的词法作用域，而 with 声明实际上是根据你传递给它的对象凭空创建了一个全新的词法作用域。</p></div> <h3 id="_3-性能"><a href="#_3-性能" class="header-anchor">#</a> 3.性能</h3> <blockquote><p>这两个机制的副作用是引擎无法在编译时对作用域查找进行优化，因为引擎只能谨慎地认 为这样的优化是无效的。使用这其中任何一个机制都将导致代码运行变慢。不要使用它们。</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/22/2022, 9:02:49 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/cyx_blog/bookReading/dont_know_js 01/01-actionScope.html" class="prev">
+        1. 作用域
+      </a></span> <span class="next"><a href="/cyx_blog/bookReading/dont_know_js 01/03-funcScopeAndBlockScope.html">
+        3. 函数作用域和块作用域
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/cyx_blog/assets/js/app.ebd8d218.js" defer></script><script src="/cyx_blog/assets/js/2.080a46d6.js" defer></script><script src="/cyx_blog/assets/js/10.d187e49f.js" defer></script>
+  </body>
+</html>

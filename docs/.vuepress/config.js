@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/cyx_blog/',
     title: 'Cyx～',
     description: '用于平时学习记录的笔记文档',
     plugins: [

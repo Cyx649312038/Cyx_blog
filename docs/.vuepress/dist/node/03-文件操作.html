@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>读写操作 | Cyx～</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/cyx_blog/assets/images/pageLogo.png">
+    <meta name="description" content="用于平时学习记录的笔记文档">
+    <meta name="author" content="cyx">
+    <meta name="Keywords" content="个人笔记">
+    
+    <link rel="preload" href="/cyx_blog/assets/css/0.styles.3178a8c9.css" as="style"><link rel="preload" href="/cyx_blog/assets/js/app.ebd8d218.js" as="script"><link rel="preload" href="/cyx_blog/assets/js/2.080a46d6.js" as="script"><link rel="preload" href="/cyx_blog/assets/js/41.5a66ba75.js" as="script"><link rel="prefetch" href="/cyx_blog/assets/js/10.d187e49f.js"><link rel="prefetch" href="/cyx_blog/assets/js/11.bfac635a.js"><link rel="prefetch" href="/cyx_blog/assets/js/12.167a9869.js"><link rel="prefetch" href="/cyx_blog/assets/js/13.5e1ef22e.js"><link rel="prefetch" href="/cyx_blog/assets/js/14.266321ac.js"><link rel="prefetch" href="/cyx_blog/assets/js/15.a0db7f52.js"><link rel="prefetch" href="/cyx_blog/assets/js/16.c3bd7f75.js"><link rel="prefetch" href="/cyx_blog/assets/js/17.850a33d5.js"><link rel="prefetch" href="/cyx_blog/assets/js/18.03baacf6.js"><link rel="prefetch" href="/cyx_blog/assets/js/19.e5ecc5cf.js"><link rel="prefetch" href="/cyx_blog/assets/js/20.84e71789.js"><link rel="prefetch" href="/cyx_blog/assets/js/21.0caa4d0f.js"><link rel="prefetch" href="/cyx_blog/assets/js/22.cd5e3d76.js"><link rel="prefetch" href="/cyx_blog/assets/js/23.de7b4abf.js"><link rel="prefetch" href="/cyx_blog/assets/js/24.902ad754.js"><link rel="prefetch" href="/cyx_blog/assets/js/25.4982f003.js"><link rel="prefetch" href="/cyx_blog/assets/js/26.b26cd10d.js"><link rel="prefetch" href="/cyx_blog/assets/js/27.0b792ce1.js"><link rel="prefetch" href="/cyx_blog/assets/js/28.9270dd34.js"><link rel="prefetch" href="/cyx_blog/assets/js/29.5dc2abbe.js"><link rel="prefetch" href="/cyx_blog/assets/js/3.321db5fe.js"><link rel="prefetch" href="/cyx_blog/assets/js/30.718bae68.js"><link rel="prefetch" href="/cyx_blog/assets/js/31.964cb332.js"><link rel="prefetch" href="/cyx_blog/assets/js/32.9da046ff.js"><link rel="prefetch" href="/cyx_blog/assets/js/33.f9e6634f.js"><link rel="prefetch" href="/cyx_blog/assets/js/34.34ac8e0c.js"><link rel="prefetch" href="/cyx_blog/assets/js/35.a763a0be.js"><link rel="prefetch" href="/cyx_blog/assets/js/36.a890cb02.js"><link rel="prefetch" href="/cyx_blog/assets/js/37.1c7e8019.js"><link rel="prefetch" href="/cyx_blog/assets/js/38.a4ab6049.js"><link rel="prefetch" href="/cyx_blog/assets/js/39.1fd5ccb6.js"><link rel="prefetch" href="/cyx_blog/assets/js/4.0704d8fe.js"><link rel="prefetch" href="/cyx_blog/assets/js/40.fe6c7787.js"><link rel="prefetch" href="/cyx_blog/assets/js/42.1d56113a.js"><link rel="prefetch" href="/cyx_blog/assets/js/43.2f654199.js"><link rel="prefetch" href="/cyx_blog/assets/js/44.081f7e06.js"><link rel="prefetch" href="/cyx_blog/assets/js/45.d8c3fbd6.js"><link rel="prefetch" href="/cyx_blog/assets/js/46.f0175cde.js"><link rel="prefetch" href="/cyx_blog/assets/js/5.11b70e0a.js"><link rel="prefetch" href="/cyx_blog/assets/js/6.74c239f2.js"><link rel="prefetch" href="/cyx_blog/assets/js/7.67a47de0.js"><link rel="prefetch" href="/cyx_blog/assets/js/8.e668bce6.js"><link rel="prefetch" href="/cyx_blog/assets/js/9.086a537d.js">
+    <link rel="stylesheet" href="/cyx_blog/assets/css/0.styles.3178a8c9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/cyx_blog/" class="home-link router-link-active"><img src="/cyx_blog/assets/images/logo.png" alt="Cyx～" class="logo"> <span class="site-name can-hide">Cyx～</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/cyx_blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/cyx_blog/bookReading/" class="nav-link">
+  bookReading
+</a></div><div class="nav-item"><a href="/cyx_blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/cyx_blog/node/" class="nav-link router-link-active">
+  node
+</a></div><div class="nav-item"><a href="/cyx_blog/project/" class="nav-link">
+  project
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/cyx_blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/cyx_blog/bookReading/" class="nav-link">
+  bookReading
+</a></div><div class="nav-item"><a href="/cyx_blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/cyx_blog/node/" class="nav-link router-link-active">
+  node
+</a></div><div class="nav-item"><a href="/cyx_blog/project/" class="nav-link">
+  project
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/cyx_blog/node/" class="sidebar-heading clickable router-link-active open"><span>node</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/cyx_blog/node/01-node介绍.html" class="sidebar-link">node介绍</a></li><li><a href="/cyx_blog/node/02-node模块化.html" class="sidebar-link">node模块化</a></li><li><a href="/cyx_blog/node/03-文件操作.html" class="active sidebar-link">node文件操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cyx_blog/node/03-文件操作.html#读写操作" class="sidebar-link">读写操作</a></li><li class="sidebar-sub-header"><a href="/cyx_blog/node/03-文件操作.html#读取文件目录操作" class="sidebar-link">读取文件目录操作</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="读写操作"><a href="#读写操作" class="header-anchor">#</a> 读写操作</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> rejects <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'assert'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> resolve <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> fd <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">openSync</span><span class="token punctuation">(</span><span class="token string">'./hello.txt'</span><span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fd<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//21</span>
+
+<span class="token comment">// var buf = Buffer.alloc(20)</span>
+
+<span class="token comment">// 同步读取</span>
+<span class="token keyword">var</span> content <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'./hello.txt'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">flag</span><span class="token operator">:</span> <span class="token string">'r'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">encoding</span><span class="token operator">:</span> <span class="token string">'utf-8'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//11</span>
+
+<span class="token comment">// 异步读取</span>
+fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./hello.txt'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">flag</span><span class="token operator">:</span> <span class="token string">'r'</span><span class="token punctuation">,</span> <span class="token literal-property property">encoding</span><span class="token operator">:</span> <span class="token string">'utf-8'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'err'</span><span class="token punctuation">,</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'异步测试！'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//异步测试！</span>
+<span class="token comment">// data hello world</span>
+
+<span class="token comment">// 进行Promise简单封装</span>
+<span class="token keyword">function</span> <span class="token function">fsRead</span><span class="token punctuation">(</span><span class="token parameter">url</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">flag</span><span class="token operator">:</span> <span class="token string">'r'</span><span class="token punctuation">,</span> <span class="token literal-property property">encoding</span><span class="token operator">:</span> <span class="token string">'utf-8'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+                <span class="token comment">// console.log('err',err);</span>
+                <span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">// console.log('data', data);</span>
+                <span class="token function">resolve</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 则上面的读取文件就可以写成以下方式</span>
+<span class="token function">fsRead</span><span class="token punctuation">(</span><span class="token string">'./hello.txt'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'value'</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment">//value hello world</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 如果要读一串关联的文件还进一步用async  await优化以免出现过多的.then</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">readList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> val1 <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fsRead</span><span class="token punctuation">(</span><span class="token string">'./hello.txt'</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> val2 <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fsRead</span><span class="token punctuation">(</span>val1 <span class="token operator">+</span> <span class="token string">'2.txt'</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> val3 <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fsRead</span><span class="token punctuation">(</span>val2 <span class="token operator">+</span> <span class="token string">'3.txt'</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'val3'</span><span class="token punctuation">,</span> val3<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//val3 hello world finally</span>
+<span class="token punctuation">}</span>
+<span class="token function">readList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token comment">// 文件写入</span>
+fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token string">'./write.txt'</span><span class="token punctuation">,</span> <span class="token string">'写入内容测试\n'</span> <span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token literal-property property">flag</span><span class="token operator">:</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token literal-property property">encoding</span><span class="token operator">:</span> <span class="token string">'utf-8'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'文件写入成功！'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//文件写入成功！</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 同样也可以像上面读取一样进行封装</span>
+<span class="token keyword">function</span> <span class="token function">fsWrite</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> content</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> content <span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token literal-property property">flag</span><span class="token operator">:</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token literal-property property">encoding</span><span class="token operator">:</span> <span class="token string">'utf-8'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// console.log('error', err);</span>
+                <span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">// console.log('文件写入成功！');  //文件写入成功！</span>
+                <span class="token function">resolve</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">writeList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">await</span> <span class="token function">fsWrite</span><span class="token punctuation">(</span><span class="token string">'./write.txt'</span><span class="token punctuation">,</span> <span class="token string">'写入测试2\n'</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> <span class="token function">fsWrite</span><span class="token punctuation">(</span><span class="token string">'./write.txt'</span><span class="token punctuation">,</span> <span class="token string">'写入测试3\n'</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> <span class="token function">fsWrite</span><span class="token punctuation">(</span><span class="token string">'./write.txt'</span><span class="token punctuation">,</span> <span class="token string">'写入测试4\n'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">writeList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 还有删除操作和上面的也差不多 用的时候可以查看官方文档</span>
+
+</code></pre></div><h2 id="读取文件目录操作"><a href="#读取文件目录操作" class="header-anchor">#</a> 读取文件目录操作</h2> <p>对基础的读写操作进行promise封装，方便后续使用</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// fsAction</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">function</span> <span class="token function">fsRead</span><span class="token punctuation">(</span><span class="token parameter">url</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">flag</span><span class="token operator">:</span> <span class="token string">'r'</span><span class="token punctuation">,</span> <span class="token literal-property property">encoding</span><span class="token operator">:</span> <span class="token string">'utf-8'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+                <span class="token comment">// console.log('err',err);</span>
+                <span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">// console.log('data', data);</span>
+                <span class="token function">resolve</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">function</span> <span class="token function">fsWrite</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> content</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> content <span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token literal-property property">flag</span><span class="token operator">:</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token literal-property property">encoding</span><span class="token operator">:</span> <span class="token string">'utf-8'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// console.log('error', err);</span>
+                <span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">// console.log('文件写入成功！');  //文件写入成功！</span>
+                <span class="token function">resolve</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>fsRead<span class="token punctuation">,</span> fsWrite<span class="token punctuation">}</span>
+</code></pre></div><p>对目录的读取操作</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span>fsRead<span class="token punctuation">,</span> fsWrite<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./fsAction'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+fs<span class="token punctuation">.</span><span class="token function">readdir</span><span class="token punctuation">(</span><span class="token string">'../02-文件操作'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> files</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>files<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        files<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fsRead</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+            <span class="token keyword">await</span> <span class="token function">fsWrite</span><span class="token punctuation">(</span><span class="token string">'./allConetnt.txt'</span><span class="token punctuation">,</span> res<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/22/2022, 9:02:49 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/cyx_blog/node/02-node模块化.html" class="prev">
+        node模块化
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/cyx_blog/assets/js/app.ebd8d218.js" defer></script><script src="/cyx_blog/assets/js/2.080a46d6.js" defer></script><script src="/cyx_blog/assets/js/41.5a66ba75.js" defer></script>
+  </body>
+</html>

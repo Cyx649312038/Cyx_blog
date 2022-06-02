@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Promise | Cyx～</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/cyx_blog/assets/images/pageLogo.png">
+    <meta name="description" content="用于平时学习记录的笔记文档">
+    <meta name="author" content="cyx">
+    <meta name="Keywords" content="个人笔记">
+    
+    <link rel="preload" href="/cyx_blog/assets/css/0.styles.3178a8c9.css" as="style"><link rel="preload" href="/cyx_blog/assets/js/app.ebd8d218.js" as="script"><link rel="preload" href="/cyx_blog/assets/js/2.080a46d6.js" as="script"><link rel="preload" href="/cyx_blog/assets/js/34.34ac8e0c.js" as="script"><link rel="prefetch" href="/cyx_blog/assets/js/10.d187e49f.js"><link rel="prefetch" href="/cyx_blog/assets/js/11.bfac635a.js"><link rel="prefetch" href="/cyx_blog/assets/js/12.167a9869.js"><link rel="prefetch" href="/cyx_blog/assets/js/13.5e1ef22e.js"><link rel="prefetch" href="/cyx_blog/assets/js/14.266321ac.js"><link rel="prefetch" href="/cyx_blog/assets/js/15.a0db7f52.js"><link rel="prefetch" href="/cyx_blog/assets/js/16.c3bd7f75.js"><link rel="prefetch" href="/cyx_blog/assets/js/17.850a33d5.js"><link rel="prefetch" href="/cyx_blog/assets/js/18.03baacf6.js"><link rel="prefetch" href="/cyx_blog/assets/js/19.e5ecc5cf.js"><link rel="prefetch" href="/cyx_blog/assets/js/20.84e71789.js"><link rel="prefetch" href="/cyx_blog/assets/js/21.0caa4d0f.js"><link rel="prefetch" href="/cyx_blog/assets/js/22.cd5e3d76.js"><link rel="prefetch" href="/cyx_blog/assets/js/23.de7b4abf.js"><link rel="prefetch" href="/cyx_blog/assets/js/24.902ad754.js"><link rel="prefetch" href="/cyx_blog/assets/js/25.4982f003.js"><link rel="prefetch" href="/cyx_blog/assets/js/26.b26cd10d.js"><link rel="prefetch" href="/cyx_blog/assets/js/27.0b792ce1.js"><link rel="prefetch" href="/cyx_blog/assets/js/28.9270dd34.js"><link rel="prefetch" href="/cyx_blog/assets/js/29.5dc2abbe.js"><link rel="prefetch" href="/cyx_blog/assets/js/3.321db5fe.js"><link rel="prefetch" href="/cyx_blog/assets/js/30.718bae68.js"><link rel="prefetch" href="/cyx_blog/assets/js/31.964cb332.js"><link rel="prefetch" href="/cyx_blog/assets/js/32.9da046ff.js"><link rel="prefetch" href="/cyx_blog/assets/js/33.f9e6634f.js"><link rel="prefetch" href="/cyx_blog/assets/js/35.a763a0be.js"><link rel="prefetch" href="/cyx_blog/assets/js/36.a890cb02.js"><link rel="prefetch" href="/cyx_blog/assets/js/37.1c7e8019.js"><link rel="prefetch" href="/cyx_blog/assets/js/38.a4ab6049.js"><link rel="prefetch" href="/cyx_blog/assets/js/39.1fd5ccb6.js"><link rel="prefetch" href="/cyx_blog/assets/js/4.0704d8fe.js"><link rel="prefetch" href="/cyx_blog/assets/js/40.fe6c7787.js"><link rel="prefetch" href="/cyx_blog/assets/js/41.5a66ba75.js"><link rel="prefetch" href="/cyx_blog/assets/js/42.1d56113a.js"><link rel="prefetch" href="/cyx_blog/assets/js/43.2f654199.js"><link rel="prefetch" href="/cyx_blog/assets/js/44.081f7e06.js"><link rel="prefetch" href="/cyx_blog/assets/js/45.d8c3fbd6.js"><link rel="prefetch" href="/cyx_blog/assets/js/46.f0175cde.js"><link rel="prefetch" href="/cyx_blog/assets/js/5.11b70e0a.js"><link rel="prefetch" href="/cyx_blog/assets/js/6.74c239f2.js"><link rel="prefetch" href="/cyx_blog/assets/js/7.67a47de0.js"><link rel="prefetch" href="/cyx_blog/assets/js/8.e668bce6.js"><link rel="prefetch" href="/cyx_blog/assets/js/9.086a537d.js">
+    <link rel="stylesheet" href="/cyx_blog/assets/css/0.styles.3178a8c9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/cyx_blog/" class="home-link router-link-active"><img src="/cyx_blog/assets/images/logo.png" alt="Cyx～" class="logo"> <span class="site-name can-hide">Cyx～</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/cyx_blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/cyx_blog/bookReading/" class="nav-link router-link-active">
+  bookReading
+</a></div><div class="nav-item"><a href="/cyx_blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/cyx_blog/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/cyx_blog/project/" class="nav-link">
+  project
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/cyx_blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/cyx_blog/bookReading/" class="nav-link router-link-active">
+  bookReading
+</a></div><div class="nav-item"><a href="/cyx_blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/cyx_blog/node/" class="nav-link">
+  node
+</a></div><div class="nav-item"><a href="/cyx_blog/project/" class="nav-link">
+  project
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/cyx_blog/bookReading/" class="sidebar-heading clickable router-link-active open"><span>前端书籍阅读</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/cyx_blog/bookReading/dont_know_js 01/" class="sidebar-heading clickable"><span>你不知道的JS(上)</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/cyx_blog/bookReading/dont_know_js 02/" class="sidebar-heading clickable"><span>你不知道的JS(中)</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/cyx_blog/bookReading/dont_know_js 03/" class="sidebar-heading clickable open"><span>你不知道的JS(下)</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/cyx_blog/bookReading/dont_know_js 03/01-grammar.html" class="sidebar-link">1.语法</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 03/02-codeOrganization.html" class="sidebar-link">2.代码组织</a></li><li><a href="/cyx_blog/bookReading/dont_know_js 03/03-asyncControl.html" class="active sidebar-link">3.异步流控制</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 03/03-asyncControl.html#promise" class="sidebar-link">Promise</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 03/03-asyncControl.html#构造和使用promise" class="sidebar-link">构造和使用Promise</a></li><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 03/03-asyncControl.html#thenable" class="sidebar-link">thenable</a></li><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 03/03-asyncControl.html#promise-api" class="sidebar-link">Promise api</a></li></ul></li><li class="sidebar-sub-header"><a href="/cyx_blog/bookReading/dont_know_js 03/03-asyncControl.html#生成器-promise" class="sidebar-link">生成器+Promise</a></li></ul></li><li><a href="/cyx_blog/bookReading/dont_know_js 03/04-collection.html" class="sidebar-link">4.集合 </a></li></ul></section></li><li><a href="/cyx_blog/bookReading/javaScriptRedBook/" class="sidebar-link">javaScript程序设计(第四版)</a></li><li><a href="/cyx_blog/bookReading/illustrateHttp/" class="sidebar-link">图解Http</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="promise"><a href="#promise" class="header-anchor">#</a> Promise</h2> <p>更详细的promise的使用方法可以看你不知道的js(中)的部分</p> <h3 id="构造和使用promise"><a href="#构造和使用promise" class="header-anchor">#</a> 构造和使用Promise</h3> <ul><li>如果调用 reject(..)，这个 promise 被拒绝，如果有任何值传给 reject(..)，这个值就 被设置为拒绝的原因值。</li> <li>如果调用 resolve(..) 且没有值传入，或者传入任何非 promise 值，这个 promise 就完成。</li> <li>如果调用 resove(..) 并传入另外一个 promise，这个 promise 就会采用传入的 promise
+的状态(要么实现要么拒绝)——不管是立即还是最终。</li></ul> <h3 id="thenable"><a href="#thenable" class="header-anchor">#</a> thenable</h3> <p>Promise(..) 构造器的真正实例是 Promise。但还有一些类 promise 对象，称为 thenable，
+一般来说，它们也可以用 Promise 机制解释。</p> <p>任何提供了 then(..) 函数的对象(或函数)都被认为是 thenable。Promise 机制中所有可
+以接受真正 promise 状态的地方，也都可以处理 thenable。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> th <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">then</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token function">thener</span><span class="token punctuation">(</span> <span class="token parameter">fulfilled</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 每100ms调用一次fulfilled(..)，直到永远</span>
+        <span class="token function">setInterval</span><span class="token punctuation">(</span> fulfilled<span class="token punctuation">,</span> <span class="token number">100</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>如果接收到了这个 thenable，并通过 th.then(..) 把它链接起来，很可能你会吃惊地发现自己的完成处理函数会被重复调用，而正常的 Promise 应该只会决议一次。</p> <p>一般来说，如果从某个其他系统接收到一个自称 promise 或者 thenable 的东西，不应该盲 目信任它。在下一小节中，我们会介绍一个 ES6 Promise 包含的工具，用来帮助解决这个 信任问题。</p> <h3 id="promise-api"><a href="#promise-api" class="header-anchor">#</a> Promise api</h3> <blockquote><p>Promise.reslove()</p></blockquote> <p>Promise.resolve(..) 创建了一个决议到传入值的 promise。我们把它的工作机制与手动方法对比一下:</p> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">var</span> p1 <span class="token operator">=</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span> <span class="token number">42</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> p2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span> <span class="token keyword">function</span> <span class="token function">pr</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">resolve</span><span class="token punctuation">(</span> <span class="token number">42</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> theP <span class="token operator">=</span> <span class="token function">ajax</span><span class="token punctuation">(</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> p1 <span class="token operator">=</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span> theP <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> p2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span> <span class="token keyword">function</span> <span class="token function">pr</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">resolve</span><span class="token punctuation">(</span> theP <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Promise.resolve(..) 是一个针对上一小节中介绍的 thenable 信任问题的解 决方案。对于任何还没有完全确定是可信 promise 的值，甚至它可能是立即 值，都可以通过把它传给 Promise.resolve(..) 来规范化。如果这个值已经 是可以确定的 promise 或者 thenable，它的状态 / 决议就会被直接采用，这 样会避免出错。而如果它是一个立即值，那么它会被“封装”为一个真正的 promise，这样就把它的行为方式规范为异步的。
+比如上面说的自己的完成处理函数会被重复调用，而正常的 Promise 应该只会决议一次这个问题。</p> <blockquote><p>Promise.reject()</p></blockquote> <p>Promise.reject(..)也一样但是有一个很重要的区别:</p> <p>resolve(..) 和 Promise.resolve(..) 可以接受 promise 并接受它的状态 / 决议，而 reject (..) 和 Promise.reject(..) 并不区分接收的值是什么。所以，如果传入 promise 或 thenable 来拒绝， 这个 promise / thenable 本身会被设置为拒绝原因，而不是其底层值。</p> <blockquote><p>Promise.all()</p></blockquote> <p>Promise.all([ .. ]) 接受一个或多个值的数组(比如，立即值、promise、thenable)。它返 回一个 promise，如果所有的值都完成，这个 promise 的结果是完成;一旦它们中的某一个 被拒绝，那么这个 promise 就立即被拒绝。</p> <p>Promise.all([ .. ])等待所有都完成(或者第一个拒绝)，</p> <blockquote><p>Promise.race()</p></blockquote> <p>Promise.race([ .. ])等待 第一个完成或者拒绝</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Promise.all([]) 将会立即完成(没有完成值)，Promise.race([]) 将会永远挂起。这是一个很奇怪的不一致，因此我建议，永远不要用空数组使用这些方法</p></div> <h2 id="生成器-promise"><a href="#生成器-promise" class="header-anchor">#</a> 生成器+Promise</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token operator">*</span><span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> ret <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">step1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        ret <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">step2</span><span class="token punctuation">(</span> ret <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">catch</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        ret <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">step2Failed</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    ret <span class="token operator">=</span> <span class="token keyword">yield</span> Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span> <span class="token punctuation">[</span>
+        <span class="token function">step3a</span><span class="token punctuation">(</span> ret <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">step3b</span><span class="token punctuation">(</span> ret <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">step3c</span><span class="token punctuation">(</span> ret <span class="token punctuation">)</span>
+    <span class="token punctuation">]</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">yield</span> <span class="token function">step4</span><span class="token punctuation">(</span> ret <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+
+<span class="token keyword">function</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token parameter">gen</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> arguments<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> it<span class="token punctuation">;</span>
+    it <span class="token operator">=</span> <span class="token function">gen</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">,</span> args <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token keyword">function</span> <span class="token function">handleNext</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">var</span> next <span class="token operator">=</span> it<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span> value <span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">handleResult</span><span class="token punctuation">(</span><span class="token parameter">next</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>next<span class="token punctuation">.</span>done<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> next<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span> next<span class="token punctuation">.</span>value <span class="token punctuation">)</span>
+                        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>
+                            handleNext<span class="token punctuation">,</span>
+                            <span class="token keyword">function</span> <span class="token function">handleErr</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>
+                                    it<span class="token punctuation">.</span><span class="token function">throw</span><span class="token punctuation">(</span> err <span class="token punctuation">)</span>
+                                <span class="token punctuation">)</span>
+                                <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> handleResult <span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span>
+                        <span class="token punctuation">)</span><span class="token punctuation">;</span> 
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span> next <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">run</span><span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/22/2022, 9:02:49 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/cyx_blog/bookReading/dont_know_js 03/02-codeOrganization.html" class="prev">
+        2.代码组织
+      </a></span> <span class="next"><a href="/cyx_blog/bookReading/dont_know_js 03/04-collection.html">
+        4.集合 
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/cyx_blog/assets/js/app.ebd8d218.js" defer></script><script src="/cyx_blog/assets/js/2.080a46d6.js" defer></script><script src="/cyx_blog/assets/js/34.34ac8e0c.js" defer></script>
+  </body>
+</html>

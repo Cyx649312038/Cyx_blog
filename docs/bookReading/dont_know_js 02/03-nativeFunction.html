@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const arr = [1,2,3,4]
+    console.log(arr);
+    console.log(Object.prototype.toString.call(arr));
+
+    var a = new String('abc')
+    var bool = new Boolean(false)
+    console.log(a,bool);
+
+    var c = []
+    c.length = 3
+    console.log(new Array(3), c, [undefined, undefined, undefined]);
+
+    console.log(new Date());
+
+    let sy1 =  Symbol() 
+    let sy2 =  Symbol()
+    let obj = {
+        [sy1]:'111',
+        [sy2]: '222'
+    }
+    console.log(obj,obj.sy1, obj.sy2, obj[sy1],obj[sy2]);
+    for(let k in obj) {
+        console.log('k',k);
+    }
+
+    let sym1 = Symbol('symbol1')
+    console.log(sym1);
+
+    console.log(typeof Function.prototype);
+    console.log(Function.prototype);
+    console.log(Function.prototype());
+</script>
+</html>
